@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>స్థాన విలువ</title>
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+
+    <!-- AMP Core -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-story"
+      src="https://cdn.ampproject.org/v0/amp-story-1.0.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-video"
+      src="https://cdn.ampproject.org/v0/amp-video-0.1.js"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Knewave&family=Ramabhadra&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AMP boilerplate -->
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          animation: none;
+        }
+      </style></noscript
+    >
+
+    <!-- Custom Styles -->
+    <style amp-custom>
+      amp-story {
+        font-family: "Knewave", cursive, sans-serif;
+        color: #fff;
+      }
+      amp-story-page {
+        background-color: #000;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.3;
+        font-family: "Ramabhadra", cursive, sans-serif;
+        color: #fff;
+        text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); /* X-offset, Y-offset, blur, color */
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-family: "Ramabhadra", sans-serif;
+      }
+      amp-story-grid-layer.bottom {
+        align-content: end;
+        padding: 20px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+      }
+
+      .bottom {
+        justify-content: flex-end;
+        padding: 20px;
+      }
+
+      /* Default: no animation */
+      .typewriter {
+        display: inline-block;
+        overflow: hidden;
+        white-space: normal;
+        word-wrap: break-word;
+        border-right: 0px solid #000;
+        font-size: 18px;
+        line-height: 1.4;
+        max-width: 100%;
+        opacity: 0;
+      }
+
+      /* Animate only when page is active */
+      amp-story-page[active] .typewriter {
+        opacity: 1;
+        animation: typing 6s steps(120, end), blink 0.7s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          max-height: 0;
+        }
+        to {
+          max-height: 500px;
+        }
+      }
+
+      @keyframes blink {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <amp-story
+      standalone
+      title="Rayan's Grand Alphabet Hunt"
+      publisher="R. Parvathi"
+      publisher-logo-src="image/cover.png"
+      poster-portrait-src="image/cover.png"
+    >
+      <!-- Cover Page -->
+      <amp-story-page id="cover">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/cover.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <h1>దియా మరియు వివన్ యొక్క స్థాన విలువ పరేడ్</h1>
+          <p>రాపర్తి పార్వతి</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 1 -->
+      <amp-story-page id="page1">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/1.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            అది స్వాతంత్ర్య దినోత్సవానికి ముందు రోజు! దియా, వివన్ ఒక పెద్ద పనిలో
+            ఉన్నారు: పాఠశాల అలంకరణ కోసం అత్యంత ప్రకాశవంతమైన బంతిపూలను
+            సేకరించాలి.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 2 -->
+      <amp-story-page id="page2">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/2.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            "నేను పసుపు రంగు పూలను తెస్తాను!" అని వివన్ అరిచాడు. "మరియు నేను
+            ముదురు నారింజ రంగు పూలను వెతుకుతాను!" అని దియా అంది.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 3 -->
+      <amp-story-page id="page3">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/3.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            త్వరలోనే, వారి బుట్టలు నిండిపోయాయి. వారంతా పూలను ఒకచోట పోసి
+            లెక్కించారు. "ఒకటి, రెండు, మూడు... మొత్తం ముప్పై నాలుగు అందమైన
+            పూలు!" అని వివన్ కేక వేశాడు.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 4 -->
+      <amp-story-page id="page4">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/4.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            "ముప్పై నాలుగు పూలు ఒకే గుత్తిగా కట్టడానికి చాలా ఎక్కువ! వాటిని
+            నలగకుండా ఎలా తీసుకెళ్తాము?" అని దియా కంగారు పడింది. అప్పుడే, వారి
+            తెలివైన పొరుగువారైన బామ్మ, సూది, దారంతో అటుగా వచ్చింది.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 5 -->
+      <amp-story-page id="page5">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/5.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            "మీరు స్థాన విలువను ఉపయోగిస్తే ముప్పై నాలుగు పూలను నిర్వహించడం
+            సులభం," అని బామ్మ నవ్వింది. "మనం ప్రత్యేకమైన చిన్న దండలు చేద్దాం!
+            ప్రతి దండలో పది పూలు ఉంటాయి. ప్రతి దండ ఒక పది అవుతుంది."
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 6 -->
+      <amp-story-page id="page6">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/6.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            వివన్ త్వరగా పనిచేశాడు. అతను ఒక దండ చేయడానికి పది పూలను గుచ్చాడు.
+            తరువాత ఇంకొకటి. ఆపై మూడు! "మనకు మూడు ఖచ్చితమైన పదుల దండలు ఉన్నాయి,"
+            అని బామ్మ అంది. "మరియు చూడండి! మనకు నాలుగు విడి పూలు మిగిలి ఉన్నాయి.
+            అవి ఒకట్లు."
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 7 -->
+      <amp-story-page id="page7">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/7.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            బామ్మ మట్టిలో 34 అనే సంఖ్యను రాసింది. "పదుల స్థానంలో ఉన్న '3' మనకు
+            పది చొప్పున మూడు దండలు ఉన్నాయని చెబుతుంది, అంటే 30. ఒకట్ల స్థానంలో
+            ఉన్న '4' మనకు నాలుగు అదనపు పూలు ఉన్నాయని చెబుతుంది!"
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 8 -->
+      <amp-story-page id="page8">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/8.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            "ఇప్పుడు ఒక చిన్న ఆట," అని బామ్మ ప్రకటించింది. "ఈ రెండు సంఖ్యలను
+            చూడండి: 23 మరియు 32. అవి ఒకే అంకెలను ఉపయోగిస్తాయి, కానీ అవి చాలా
+            భిన్నమైనవి! ప్రతి దానిలో '3' అంటే ఏమిటి?"
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 9 -->
+      <amp-story-page id="page9">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/9.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            వివన్ 32 లోని '3' ను చూపించాడు. "అది మూడు లాగే కనిపిస్తోంది," అని
+            అన్నాడు. "అవును, అది అంతే!" బామ్మ అంగీకరించింది. "అది దాని ముఖ విలువ
+            (Face Value). అంకె యొక్క ముఖ విలువ అంటే అది ఎక్కడ ఉన్నా, అది ఎలా
+            కనిపిస్తుందో అంతే."
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 10 -->
+      <amp-story-page id="page10">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/10.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            అప్పుడు దియా 23 లోని '3' ను చూపించింది. "ఈ మూడు కూడా మూడే," అని ఆమె
+            అంది. "అవును, కానీ ఈసారి అది ఒకట్ల స్థానంలో ఉంది!" అని బామ్మ
+            వివరించింది. "కాబట్టి దాని స్థాన విలువ (Place Value) 3 ఒకట్లు, లేదా
+            కేవలం 3."
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      <!-- Page 11 -->
+      <amp-story-page id="page10">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/11.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            "32 లోని '3' పదుల స్థానంలో ఉంది, కాబట్టి దాని స్థాన విలువ 3 పదులు,
+            అంటే 30! స్థానం ఆ విలువను మారుస్తుంది!" అని బామ్మ వివరించింది. దియా,
+            వివన్ చివరకు అర్థం చేసుకున్నారు. అంకెలు వాటి స్థానాన్ని బట్టి
+            వేర్వేరు విలువలు ధరిస్తాయి!
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      <!-- Page 12 -->
+      <amp-story-page id="page10">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="image/12.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            వారి స్థాన విలువ జ్ఞానం వారికి సహాయం చేయడంతో, 34 పూలను తీసుకెళ్లడం
+            సులభమైంది. దియా, వివన్ తమ అందమైన దండలతో అలంకరించడానికి సిద్ధంగా,
+            పాఠశాలకు సంతోషంగా పరుగెత్తారు!
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+    </amp-story>
+  </body>
+</html>
