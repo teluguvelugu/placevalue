@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rayan's Grand Alphabet Hunt</title>
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+
+    <!-- AMP Core -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-story"
+      src="https://cdn.ampproject.org/v0/amp-story-1.0.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-video"
+      src="https://cdn.ampproject.org/v0/amp-video-0.1.js"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Knewave&family=Ramabhadra&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AMP boilerplate -->
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          animation: none;
+        }
+      </style></noscript
+    >
+
+    <!-- Custom Styles -->
+    <style amp-custom>
+      amp-story {
+        font-family: "Knewave", cursive, sans-serif;
+        color: #fff;
+      }
+      amp-story-page {
+        background-color: #000;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.3;
+        font-family: "Ramabhadra", cursive, sans-serif;
+        color: #fff;
+        text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); /* X-offset, Y-offset, blur, color */
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-family: "Ramabhadra", sans-serif;
+      }
+      amp-story-grid-layer.bottom {
+        align-content: end;
+        padding: 20px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+      }
+
+      .bottom {
+        justify-content: flex-end;
+        padding: 20px;
+      }
+
+      /* Default: no animation */
+      .typewriter {
+        display: inline-block;
+        overflow: hidden;
+        white-space: normal;
+        word-wrap: break-word;
+        border-right: 0px solid #000;
+        font-size: 18px;
+        line-height: 1.4;
+        max-width: 100%;
+        opacity: 0;
+      }
+
+      /* Animate only when page is active */
+      amp-story-page[active] .typewriter {
+        opacity: 1;
+        animation: typing 6s steps(120, end), blink 0.7s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          max-height: 0;
+        }
+        to {
+          max-height: 500px;
+        }
+      }
+
+      @keyframes blink {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <amp-story
+      standalone
+      title="Rayan's Grand Alphabet Hunt"
+      publisher="R. Parvathi"
+      publisher-logo-src="images/cover.png"
+      poster-portrait-src="images/cover.png"
+    >
+      <!-- Cover Page -->
+      <amp-story-page id="cover">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/cover.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <h1>తొందరపాటు తెచ్చిన తంటా</h1>
+          <p>రాపర్తి పార్వతి</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 1 -->
+      <amp-story-page id="page1">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/1.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            ఒక రోజు రామయ్య, సోమయ్య సంతకు వెళుతున్నారు. చాలాదూరం నడిచి అలిసిపోయి,
+            దారిలో ఒక పెద్ద మామిడి చెట్టు కింద కూర్చున్నారు.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 2 -->
+      <amp-story-page id="page2">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/2.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            సోమయ్య రామయ్యతో, "అయ్యో! నాకొక మంచి పాయసం తినాలని ఉంది. పాయసం
+            చెయ్యాలంటే ఏమేమి కావాలి?" అని అడిగాడు. రామయ్య నవ్వుతూ, "బెల్లం,
+            రవ్వ, పాలు, నెయ్యి, ద్రాక్ష, జీడిపప్పు కావాలి" అని చెప్పాడు.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 3 -->
+      <amp-story-page id="page3">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/3.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            ఇదంతా ఆ చెట్టు కొమ్మలపై కూర్చున్న చింటూ, మింటూ అనే రెండు చిన్న
+            పిట్టలు విన్నాయి. "ఆహా! పాయసం అంటే మాకూ చాలా ఇష్టం! మనం కూడా
+            చేసుకుందాం, మింటూ!" అన్నది చింటూ ఉత్సాహంగా.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 4 -->
+      <amp-story-page id="page4">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/4.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            వెంటనే చింటూ, మింటూ ఎగిరి సంతకు వెళ్ళాయి. రామయ్య చెప్పినవన్నీ –
+            బెల్లం, రవ్వ, పాలు, నెయ్యి, ద్రాక్ష, జీడిపప్పు - జాగ్రత్తగా
+            తెచ్చుకున్నాయి.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 5 -->
+      <amp-story-page id="page5">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/5.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            రెండు పిట్టలు కలిసి చెట్టు కింద చిన్నగా పొయ్యిని వెలిగించి, పాయసం
+            వండటం మొదలుపెట్టాయి. కొంతసేపటికే పాయసం కుత కుత ఉడకడం మొదలైంది.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 6 -->
+      <amp-story-page id="page6">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/6.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            వేడి వేడి పాయసం ఘుమఘుమ వాసన అడవి అంతా వ్యాపించింది. ఆ తీపి వాసన చూసి
+            చింటూకు, మింటూకు నోరూరుతోంది.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 7 -->
+      <amp-story-page id="page7">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/7.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            చింటూకు ఒక్క నిమిషం కూడా ఆగాలనిపించలేదు. "మింటూ! నాకు కొంచెం కూడా
+            ఆగబుద్ధి కావట్లేదు. ఇప్పుడే కొంచెం రుచి చూస్తాను!" అన్నది ఆత్రంగా.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 8 -->
+      <amp-story-page id="page8">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/8.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            మింటూ కంగారుగా, "వద్దు చింటూ! వద్దు! అది చాలా వేడిగా ఉంది. కొంచెం
+            సేపు చల్లారనివ్వు. తొందరపడకు!" అని వారించింది.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 9 -->
+      <amp-story-page id="page9">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/9.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            కానీ చింటూ ఆ మాట వినలేదు. ఆత్రం ఆపుకోలేక, ఉడుకుతున్న పాయసంలో తన
+            ముక్కును పెట్టి, టక్కున రుచి చూసింది.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 10 -->
+      <amp-story-page id="page10">
+        <amp-story-grid-layer template="fill">
+          <amp-img
+            src="images/10.png"
+            width="720"
+            height="1280"
+            layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p class="typewriter">
+            ఇంకేముంది! వెంటనే వేడికి చింటూ ముక్కు కాలింది. బాధతో చింటూ గెంతులు
+            వేయసాగింది. "అయ్యో! తొందరపాటు తెచ్చిన తంటా!" అనుకుంది బాధగా.
+          </p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+    </amp-story>
+  </body>
+</html>
