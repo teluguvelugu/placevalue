@@ -78,13 +78,13 @@
         }
       }
     </style>
-    <noscript
-      ><style amp-boilerplate>
+    <noscript>
+      <style amp-boilerplate>
         body {
           animation: none;
         }
-      </style></noscript
-    >
+      </style>
+    </noscript>
 
     <!-- Custom Styles -->
     <style amp-custom>
@@ -111,6 +111,14 @@
         padding: 20px;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
       }
+      .sound-hint {
+        text-align: center;
+        font-size: 1.2rem;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 20px;
+        border-radius: 20px;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -120,6 +128,7 @@
       publisher="రాపర్తి పార్వతి"
       publisher-logo-src="image/cover.png"
       poster-portrait-src="image/cover.png"
+      
     >
       <!-- Cover Page -->
       <amp-story-page id="cover">
@@ -131,27 +140,30 @@
             layout="responsive"
           ></amp-img>
         </amp-story-grid-layer>
+
+        <!-- Bottom Title -->
         <amp-story-grid-layer template="vertical" class="bottom">
           <h1 animate-in="fly-in-bottom" animate-in-duration="1s">
             దియా మరియు వివన్ యొక్క స్థాన విలువ పరేడ్
           </h1>
           <p animate-in="fade-in" animate-in-delay="0.5s">రాపర్తి పార్వతి</p>
         </amp-story-grid-layer>
+
+        <!-- 🔊 Sound Hint -->
+        <amp-story-grid-layer template="vertical" style="align-content: center;">
+          <p class="sound-hint"
+             animate-in="fade-in"
+             animate-in-delay="1s"
+             animate-in-duration="2s">
+            🔊 వినడం కోసం ఒకసారి తాకండి
+          </p>
+        </amp-story-grid-layer>
       </amp-story-page>
 
       <!-- Page 1 -->
-      <amp-story-page
-        id="page1"
-        background-audio="audio/1.mp3"
-        auto-advance-after="27s"
-      >
+      <amp-story-page id="page1" background-audio="audio/1.mp3" auto-advance-after="27s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/1.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/1.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -159,22 +171,25 @@
             ఉన్నారు: పాఠశాల అలంకరణ కోసం అత్యంత ప్రకాశవంతమైన బంతిపూలను
             సేకరించాలి.
           </p>
+<amp-story-grid-layer template="vertical">
+  <p
+    style="position:absolute; top:16px; left:16px; width: 190px;
+           font-size:0.9rem; background:rgba(0,0,0,0.6);
+           padding:6px 12px; border-radius:15px; 
+           color:#fff; margin:0;"
+    animate-in="fade-in"
+    animate-in-delay="0.5s"
+    animate-in-duration="2s"
+  >
+            🔊 వినడం కోసం ఒకసారి తాకండి
+          </p>
         </amp-story-grid-layer>
       </amp-story-page>
 
       <!-- Page 2 -->
-      <amp-story-page
-        id="page2"
-        background-audio="audio/2.mp3"
-        auto-advance-after="14s"
-      >
+      <amp-story-page id="page2" background-audio="audio/2.mp3" auto-advance-after="14s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/2.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/2.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -185,18 +200,9 @@
       </amp-story-page>
 
       <!-- Page 3 -->
-      <amp-story-page
-        id="page3"
-        background-audio="audio/3.mp3"
-        auto-advance-after="18s"
-      >
+      <amp-story-page id="page3" background-audio="audio/3.mp3" auto-advance-after="18s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/3.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/3.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -207,18 +213,9 @@
       </amp-story-page>
 
       <!-- Page 4 -->
-      <amp-story-page
-        id="page4"
-        background-audio="audio/4.mp3"
-        auto-advance-after="21s"
-      >
+      <amp-story-page id="page4" background-audio="audio/4.mp3" auto-advance-after="21s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/4.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/4.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -230,18 +227,9 @@
       </amp-story-page>
 
       <!-- Page 5 -->
-      <amp-story-page
-        id="page5"
-        background-audio="audio/5.mp3"
-        auto-advance-after="28s"
-      >
+      <amp-story-page id="page5" background-audio="audio/5.mp3" auto-advance-after="28s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/5.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/5.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -253,18 +241,9 @@
       </amp-story-page>
 
       <!-- Page 6 -->
-      <amp-story-page
-        id="page6"
-        background-audio="audio/6.mp3"
-        auto-advance-after="27s"
-      >
+      <amp-story-page id="page6" background-audio="audio/6.mp3" auto-advance-after="27s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/6.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/6.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -277,19 +256,9 @@
       </amp-story-page>
 
       <!-- Page 7 -->
-      <!-- Page 7 -->
-      <amp-story-page
-        id="page7"
-        background-audio="audio/7.mp3"
-        auto-advance-after="28s"
-      >
+      <amp-story-page id="page7" background-audio="audio/7.mp3" auto-advance-after="28s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/7.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/7.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -301,18 +270,9 @@
       </amp-story-page>
 
       <!-- Page 8 -->
-      <amp-story-page
-        id="page8"
-        background-audio="audio/8.mp3"
-        auto-advance-after="33s"
-      >
+      <amp-story-page id="page8" background-audio="audio/8.mp3" auto-advance-after="33s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/8.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/8.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -324,18 +284,9 @@
       </amp-story-page>
 
       <!-- Page 9 -->
-      <amp-story-page
-        id="page9"
-        background-audio="audio/9.mp3"
-        auto-advance-after="52s"
-      >
+      <amp-story-page id="page9" background-audio="audio/9.mp3" auto-advance-after="52s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/9.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/9.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -348,18 +299,9 @@
       </amp-story-page>
 
       <!-- Page 10 -->
-      <amp-story-page
-        id="page10"
-        background-audio="audio/10.mp3"
-        auto-advance-after="25s"
-      >
+      <amp-story-page id="page10" background-audio="audio/10.mp3" auto-advance-after="25s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/10.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/10.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -372,18 +314,9 @@
       </amp-story-page>
 
       <!-- Page 11 -->
-      <amp-story-page
-        id="page11"
-        background-audio="audio/11.mp3"
-        auto-advance-after="17s"
-      >
+      <amp-story-page id="page11" background-audio="audio/11.mp3" auto-advance-after="17s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/11.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/11.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
@@ -396,20 +329,9 @@
       </amp-story-page>
 
       <!-- Page 12 -->
-      <amp-story-page
-        id="page12"
-        background-audio="audio/12.mp3"
-        auto-advance-after="24s"
-        
-      >
-        >
+      <amp-story-page id="page12" background-audio="audio/12.mp3" auto-advance-after="24s">
         <amp-story-grid-layer template="fill">
-          <amp-img
-            src="image/12.png"
-            width="720"
-            height="1280"
-            layout="responsive"
-          ></amp-img>
+          <amp-img src="image/12.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <p animate-in="fade-in" animate-in-duration="2s">
